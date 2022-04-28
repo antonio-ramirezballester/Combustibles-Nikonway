@@ -1,2 +1,58 @@
 @import url('./normalize.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
+/* font-family: 'Advent Pro', sans-serif; */
+
+header{
+    width: 100%;
+    height: 9vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #343a40;
+    color: #ff914c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header h1{
+    margin-left: 2rem;
+    margin-bottom: 1.4rem;
+    width: 3rem;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+nav{
+    flex-grow: 0.8;
+    padding-left: 55px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a:hover{
+    border-bottom: dotted 2px #232d60;
+}
+
+#bienvenida{
+    background-color: #ff914c;
+    height: 20rem;
+    text-align: center;
+}
+
+#saludo{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 3rem;
+    font-size: 70px;
+    font-family: 'Advent Pro', sans-serif;
+    text-transform: uppercase;
+}
+
+#bienvenida p{
+    font-size: 20px;
+}
