@@ -3,14 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
 /* font-family: 'Advent Pro', sans-serif; */
 
+html{
+    --naranja: #ff914c;
+    --gris: #a69d9a;
+    --negro: #343a40;
+}
+
 header{
     width: 100%;
     height: 9vh;
     margin: auto;
     display: flex;
     align-items: center;
-    background-color: #343a40;
-    color: #ff914c;
+    background-color: var(--negro);
+    color: var(--naranja);
     font-size: 16px;
     font-weight: bold;
 }
@@ -19,8 +25,15 @@ header h1{
     margin-left: 2rem;
     margin-bottom: 1.4rem;
     width: 3rem;
-    cursor: pointer;
     font-size: 24px;
+}
+
+header h1:hover{
+    cursor: pointer;
+}
+
+header h1 a:hover{
+    cursor: pointer;
 }
 
 nav{
@@ -34,20 +47,26 @@ nav ul li{
     margin: 0px 20px;
 }
 
+nav ul li:hover{
+    cursor: pointer;
+}
+
 nav ul li a:hover{
-    border-bottom: dotted 2px #232d60;
+    cursor: pointer;
 }
 
 #bienvenida{
-    background-color: #ff914c;
-    height: 20rem;
+    background-color: var(--naranja);
+    height: 14rem;
     text-align: center;
+    color: var(--negro);
 }
 
 #saludo{
     margin-top: 0px;
+    color: var(--negro);
     margin-bottom: 10px;
-    padding-top: 3rem;
+    padding-top: 1rem;
     font-size: 70px;
     font-family: 'Advent Pro', sans-serif;
     text-transform: uppercase;
@@ -55,4 +74,47 @@ nav ul li a:hover{
 
 #bienvenida p{
     font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#botonanuncio{
+    color: var(--negro);
+    text-decoration: none;
+    border: 1px solid var(--negro);
+    border-radius: 5px;
+    padding: 5px;
+    transition: linear 0.5s;
+}
+#botonanuncio:hover{
+    cursor: pointer;
+    color: var(--naranja);
+    padding: 7px;
+    transition: linear 0.5s;
+    background-color: var(--negro);
+}
+
+#combustibles{
+    background-color: var(--negro);
+    margin-top: -22px;
+}
+
+.card{
+    width: 38%;
+    background-color: var(--negro);
+    box-shadow: 0 4px 8px 0 rgba(255, 145, 76), 0 6px 20px 0 rgba(0, 0, 0, 0.678);
+    text-align: justify;
+    align-items: center;
+}
+
+.card h1{
+    text-align: center;
+    color: var(--naranja);
+}
+
+.card p{
+    color: var(--naranja);
+    padding-top: 5px;
+    margin: 0 1rem;
+    line-height: 2rem;
+    font-size: 19px;
 }
