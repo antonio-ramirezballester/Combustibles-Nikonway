@@ -77,33 +77,34 @@ nav ul li a:hover{
     margin-bottom: 30px;
 }
 
-#botonanuncio{
+#btnanuncio{
     color: var(--negro);
     text-decoration: none;
     border: 1px solid var(--negro);
     border-radius: 5px;
     padding: 5px;
-    transition: linear 0.5s;
+    transition: linear 0.25s;
 }
-#botonanuncio:hover{
+#btnanuncio:hover{
     cursor: pointer;
     color: var(--naranja);
     padding: 7px;
-    transition: linear 0.5s;
+    transition: linear 0.25s;
     background-color: var(--negro);
 }
 
 #combustibles{
     background-color: var(--negro);
-    margin-top: -22px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
 .card{
-    width: 38%;
+    margin: 20px 20px;
+    min-height: 190px;
     background-color: var(--negro);
     box-shadow: 0 4px 8px 0 rgba(255, 145, 76), 0 6px 20px 0 rgba(0, 0, 0, 0.678);
-    text-align: justify;
-    align-items: center;
 }
 
 .card h1{
@@ -117,4 +118,22 @@ nav ul li a:hover{
     margin: 0 1rem;
     line-height: 2rem;
     font-size: 19px;
+    text-align: center;
+    align-items: center;
+}
+
+.btncombustibles{
+    color: var(--naranja);
+    text-decoration: none;
+    border: 1px solid var(--naranja);
+    border-radius: 5px;
+    padding: 5px;
+    transition: linear 0.25s;
+}
+.btncombustibles:hover{
+    cursor: pointer;
+    color: var(--negro);
+    padding: 7px;
+    transition: linear 0.25s;
+    background-color: var(--naranja);
 }
