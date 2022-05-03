@@ -96,13 +96,12 @@ nav ul li a:hover{
 #combustibles{
     background-color: var(--negro);
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(2, auto);
 }
 
 .card{
     margin: 20px 20px;
-    min-height: 190px;
+    min-height: 160px;
     background-color: var(--negro);
     box-shadow: 0 4px 8px 0 rgba(255, 145, 76), 0 6px 20px 0 rgba(0, 0, 0, 0.678);
 }
@@ -114,10 +113,7 @@ nav ul li a:hover{
 
 .card p{
     color: var(--naranja);
-    padding-top: 5px;
-    margin: 0 1rem;
-    line-height: 2rem;
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
     align-items: center;
 }
@@ -136,4 +132,36 @@ nav ul li a:hover{
     padding: 7px;
     transition: linear 0.25s;
     background-color: var(--naranja);
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: var(--negro);
+}
+
+footer::before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--naranja);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.logo img{
+    margin: 10px 0px 10px 0px;
+}
+
+.logo small{
+    color: var(--naranja);
+    padding-bottom: 10px;
 }
