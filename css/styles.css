@@ -126,6 +126,7 @@ nav ul li a:hover{
     padding: 5px;
     transition: linear 0.25s;
 }
+
 .btncombustibles:hover{
     cursor: pointer;
     color: var(--negro);
@@ -164,4 +165,21 @@ footer::before{
 .logo small{
     color: var(--naranja);
     padding-bottom: 10px;
+}
+
+.sobrenosotros{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+}
+
+.sobrenosotros a{
+    text-decoration: none;
+    color: var(--naranja);
+    margin-top: 10px;
+}
+
+.sobrenosotros a:hover{
+    cursor: pointer;
 }
