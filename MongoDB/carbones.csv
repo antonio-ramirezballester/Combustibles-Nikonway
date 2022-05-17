@@ -1,5 +1,5 @@
-_id,id,nombre,precio,precio/kg
-627d120421e08f856eb0157b,1,Carbón,1.41,"1'41€/Kg"
-627d12df21e08f856eb01588,2,Carbón vegetal,1.9,"1'90€/Kg"
-627d14d721e08f856eb01589,3,Turba rubia,0.8,"0'80€/Kg"
-627d14e421e08f856eb0158a,4,Turba negra,0.8,"0'80€/Kg"
+_id,id,nombre,precio,precio/kg,stock
+627d120421e08f856eb0157b,1,Carbón,1.41,"1'41€/Kg",521
+627d12df21e08f856eb01588,2,Carbón vegetal,1.9,"1'90€/Kg",428
+627d14d721e08f856eb01589,3,Turba rubia,0.8,"0'80€/Kg",726
+627d14e421e08f856eb0158a,4,Turba negra,0.8,"0'80€/Kg",738

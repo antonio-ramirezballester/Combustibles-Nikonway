@@ -1,4 +1,4 @@
-Nombre,Precio,Precio/L,_id,id
-Gas natural,4.1,"4'10€/L",627d19de21e08f856eb015a5,1
-Propano,1.45,"1'45€/L",627d19f621e08f856eb015a6,2
-Gus butano,12,12€/12L,627d1a2421e08f856eb015a7,3
+Nombre,Precio,Precio/L,_id,id,stock
+Gas natural,4.1,"4'10€/L",627d19de21e08f856eb015a5,1,293
+Propano,1.45,"1'45€/L",627d19f621e08f856eb015a6,2,836
+Gus butano,12,12€/12L,627d1a2421e08f856eb015a7,3,195

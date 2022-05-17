@@ -114,10 +114,12 @@ nav ul li a:hover{
 }
 
 .cards{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+    border: solid 1px red;
+    width: 95%;
     margin: auto;
-    align-items: center;
 }
 
 .cards h1{
@@ -126,8 +128,8 @@ nav ul li a:hover{
 
 .card{
     min-height: 160px;
-    width: 80%;
     margin-bottom: 10px;
+    border: solid 1px blue;
     background-color: var(--negro);
     box-shadow: 0 4px 8px 0 rgba(255, 145, 76), 0 6px 20px 0 rgba(0, 0, 0, 0.678);
 }

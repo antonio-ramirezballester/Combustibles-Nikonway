@@ -1,9 +1,9 @@
-_id,id,nombre,precio,precio/kg
-6273dfd7f5db5b2839ba5243,1,Leña de olivo,0.18,"0'18€/Kg"
-6273e246f5db5b2839ba5245,2,Leña de roble,0.1,"0'10€/Kg"
-6273e292f5db5b2839ba5246,3,Leña de encina,0.19,"0'19€/Kg"
-6273e2c6f5db5b2839ba5247,4,Leña de pino,0.09,"0'09€/Kg"
-6273e3fef5db5b2839ba5248,5,Sarmientos,0.5,"0'50€/Kg"
-6273e728f5db5b2839ba5249,6,Astillas,0.35,"0'35€/Kg"
-6273e781f5db5b2839ba524a,7,Pellets,0.26,"0'26€/Kg"
-6273e816f5db5b2839ba524b,8,Briquetas,0.41,"0'41€/Kg"
+_id,id,nombre,precio,precio/kg,stock
+6273dfd7f5db5b2839ba5243,1,Leña de olivo,0.18,"0'18€/Kg",746
+6273e246f5db5b2839ba5245,2,Leña de roble,0.1,"0'10€/Kg",985
+6273e292f5db5b2839ba5246,3,Leña de encina,0.19,"0'19€/Kg",121
+6273e2c6f5db5b2839ba5247,4,Leña de pino,0.09,"0'09€/Kg",230
+6273e3fef5db5b2839ba5248,5,Sarmientos,0.5,"0'50€/Kg",290
+6273e728f5db5b2839ba5249,6,Astillas,0.35,"0'35€/Kg",207
+6273e781f5db5b2839ba524a,7,Pellets,0.26,"0'26€/Kg",764
+6273e816f5db5b2839ba524b,8,Briquetas,0.41,"0'41€/Kg",537
