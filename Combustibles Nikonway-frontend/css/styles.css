@@ -1,0 +1,11 @@
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css?_cacheOverride=1574773860125" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz');
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+    padding: 20px;
+    text-align: center;
+  }
