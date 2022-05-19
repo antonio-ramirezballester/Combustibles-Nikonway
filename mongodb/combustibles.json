@@ -1,0 +1,277 @@
+[{
+  "_id": {
+    "$oid": "627d14d721e08f856eb01589"
+  },
+  "nombre": "Turba rubia",
+  "precio": {
+    "$numberDecimal": "0.9"
+  },
+  "stock": 726,
+  "preciou": "0'80€/Kg"
+},{
+  "_id": {
+    "$oid": "627d14e421e08f856eb0158a"
+  },
+  "nombre": "Turba negra",
+  "precio": {
+    "$numberDecimal": "0.8"
+  },
+  "stock": 738,
+  "preciou": "0'80€/Kg"
+},{
+  "_id": {
+    "$oid": "627d19de21e08f856eb015a5"
+  },
+  "stock": 293,
+  "nombre": "Gas natural",
+  "precio": {
+    "$numberDecimal": "4.1"
+  },
+  "preciou": "4'10€/L"
+},{
+  "_id": {
+    "$oid": "627d19f621e08f856eb015a6"
+  },
+  "stock": 836,
+  "nombre": "Propano",
+  "precio": {
+    "$numberDecimal": "1.45"
+  },
+  "preciou": "1'45€/L"
+},{
+  "_id": {
+    "$oid": "627d1a2421e08f856eb015a7"
+  },
+  "stock": 195,
+  "nombre": "Gus butano",
+  "precio": {
+    "$numberDecimal": "12"
+  },
+  "preciou": "12€/12L"
+},{
+  "_id": {
+    "$oid": "6273dfd7f5db5b2839ba5243"
+  },
+  "nombre": "Leña de olivo",
+  "precio": {
+    "$numberDecimal": "0.18"
+  },
+  "stock": 746,
+  "preciou": "0'18€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e246f5db5b2839ba5245"
+  },
+  "nombre": "Leña de roble",
+  "precio": {
+    "$numberDecimal": "0.1"
+  },
+  "stock": 985,
+  "preciou": "0'10€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e292f5db5b2839ba5246"
+  },
+  "nombre": "Leña de encina",
+  "precio": {
+    "$numberDecimal": "0.19"
+  },
+  "stock": 121,
+  "preciou": "0'19€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e2c6f5db5b2839ba5247"
+  },
+  "nombre": "Leña de pino",
+  "precio": {
+    "$numberDecimal": "0.09"
+  },
+  "stock": 230,
+  "preciou": "0'09€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e3fef5db5b2839ba5248"
+  },
+  "nombre": "Sarmientos",
+  "precio": {
+    "$numberDecimal": "0.5"
+  },
+  "stock": 290,
+  "preciou": "0'50€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e728f5db5b2839ba5249"
+  },
+  "nombre": "Astillas",
+  "precio": {
+    "$numberDecimal": "0.35"
+  },
+  "stock": 207,
+  "preciou": "0'35€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e781f5db5b2839ba524a"
+  },
+  "nombre": "Pellets",
+  "precio": {
+    "$numberDecimal": "0.26"
+  },
+  "stock": 764,
+  "preciou": "0'26€/Kg"
+},{
+  "_id": {
+    "$oid": "6273e816f5db5b2839ba524b"
+  },
+  "nombre": "Briquetas",
+  "precio": {
+    "$numberDecimal": "0.41"
+  },
+  "stock": 537,
+  "preciou": "0'41€/Kg"
+},{
+  "_id": {
+    "$oid": "627d167221e08f856eb0158e"
+  },
+  "stock": 998,
+  "nombre": "Gasolina E5 95",
+  "precio": {
+    "$numberDecimal": "1.15"
+  },
+  "preciou": "1'15€/L"
+},{
+  "_id": {
+    "$oid": "627d16ad21e08f856eb0158f"
+  },
+  "stock": 192,
+  "nombre": "Gasolina E10 95",
+  "precio": {
+    "$numberDecimal": "1.24"
+  },
+  "preciou": "1'24€/L"
+},{
+  "_id": {
+    "$oid": "627d16c021e08f856eb01590"
+  },
+  "stock": 478,
+  "nombre": "Gasolina E5 98",
+  "precio": {
+    "$numberDecimal": "1.29"
+  },
+  "preciou": "1'29€/L"
+},{
+  "_id": {
+    "$oid": "627d16da21e08f856eb01591"
+  },
+  "stock": 600,
+  "nombre": "Gasolina E10 98",
+  "precio": {
+    "$numberDecimal": "1.24"
+  },
+  "preciou": "1'24€/L"
+},{
+  "_id": {
+    "$oid": "627d187921e08f856eb01592"
+  },
+  "stock": 326,
+  "nombre": "Diésel A",
+  "precio": {
+    "$numberDecimal": "1.15"
+  },
+  "preciou": "1'15€/L"
+},{
+  "_id": {
+    "$oid": "627d18ba21e08f856eb01593"
+  },
+  "stock": 162,
+  "nombre": "Diésel A+",
+  "precio": {
+    "$numberDecimal": "1.2"
+  },
+  "preciou": "1'20€/L"
+},{
+  "_id": {
+    "$oid": "627d18de21e08f856eb01594"
+  },
+  "stock": 806,
+  "nombre": "Diésel B",
+  "precio": {
+    "$numberDecimal": "0.9"
+  },
+  "preciou": "0'90€/L"
+},{
+  "_id": {
+    "$oid": "627d190721e08f856eb01595"
+  },
+  "stock": 840,
+  "nombre": "Diésel C",
+  "precio": {
+    "$numberDecimal": "1"
+  },
+  "preciou": "1'00€/L"
+},{
+  "_id": {
+    "$oid": "627d192d21e08f856eb01596"
+  },
+  "stock": 409,
+  "nombre": "Biodiésel",
+  "precio": {
+    "$numberDecimal": "1.16"
+  },
+  "preciou": "1'16€/L"
+},{
+  "_id": {
+    "$oid": "627d195421e08f856eb01597"
+  },
+  "stock": 632,
+  "nombre": "GPL",
+  "precio": {
+    "$numberDecimal": "0.5"
+  },
+  "preciou": "0'50€/L"
+},{
+  "_id": {
+    "$oid": "627d197821e08f856eb01598"
+  },
+  "stock": 716,
+  "nombre": "GNC",
+  "precio": 1.7,
+  "preciou": "1'70€/L"
+},{
+  "_id": {
+    "$oid": "627d199e21e08f856eb01599"
+  },
+  "stock": 397,
+  "nombre": "Keroseno",
+  "precio": {
+    "$numberDecimal": "1.72"
+  },
+  "preciou": "1'72€/L"
+},{
+  "_id": {
+    "$oid": "628647bc02a83c6883262d88"
+  },
+  "nombre": "Carbón vegetal",
+  "precio": {
+    "$numberDecimal": "1.9"
+  },
+  "stock": 428,
+  "preciou": "1'90€/Kg"
+},{
+  "_id": {
+    "$oid": "628649cb02a83c6883262d89"
+  },
+  "nombre": "Carbón",
+  "precio": {
+    "$numberDecimal": "1.41"
+  },
+  "stock": 521,
+  "preciou": "1'41€/Kg"
+},{
+  "_id": {
+    "$oid": "62867b01b7f1c833b833eb60"
+  },
+  "nombre": "Uranio",
+  "precio": 49,
+  "preciou": "49€/Kg",
+  "stock": 1482
+}]

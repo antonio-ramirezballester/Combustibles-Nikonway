@@ -45,7 +45,7 @@ exports.actualizarCombustible = async (req, res, next) => {
     try {
         console.log("Datos a modificar", req.body);
 
-        const filter = { _id : req.body.id };
+        const filter = { _id : req.params.idCombustible };
         const update =  req.body;
         //Opciones, devolver el nuevo objeto modificado
         const options = {new : true};

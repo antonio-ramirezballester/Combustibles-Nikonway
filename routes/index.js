@@ -15,7 +15,7 @@ module.exports = function() {
     router.post('/combustibles', combustiblesController.nuevoCombustible);    
 
     // Actualizar Combustibles
-    router.put('/combustibles', combustiblesController.actualizarCombustible);
+    router.put('/combustibles/:idCombustible', combustiblesController.actualizarCombustible);
 
     // Eliminar Combustibles
     router.delete('/combustibles/:idCombustible', combustiblesController.eliminarCombustible);

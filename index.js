@@ -10,9 +10,7 @@ const cors = require('cors');
 
 // conectar mongo
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/combustibles', {useNewUrlParser: true, useUnifiedTopology: true});
-// http://localhost:5000/ingredientes
-
+mongoose.connect('mongodb://localhost:27017/combustibles', {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify:false});
 
 // crear el servidor
 const app = express();
