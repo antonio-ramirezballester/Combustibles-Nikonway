@@ -1,5 +1,7 @@
 const dominioAPI = "http://localhost:5000/combustibles";
 const combustiblesTag = document.querySelector('#combustible');
+const searchTextTag = document.querySelector('#buscador');
+const submitButtonTag = document.querySelector('#submit-buscador');
 const ordenarTag = document.querySelector('#ordenar');
 const carritoCombustiblesTag = document.querySelector('#carritoCombustibles');
 let combustiblesJSON = [];
@@ -12,12 +14,17 @@ window.onload = async () => {
     pintarCombustibles(combustiblesJSON);
     marcarFavoritos();
     cargarFavoritos();
-    handleAddMoto();
+    seleccionarCombustible();
 
     ordenarTag.addEventListener("change", function(){
         ordenarCombustibles();
         cargarFavoritos();
         marcarFavoritos();
+    });
+
+    submitButtonTag.addEventListener("click", function (event) {
+        event.preventDefault();
+        filtrarCombustible();
     });
 };
 
@@ -39,6 +46,16 @@ const pintarCombustibles = (combustibles) => {
         combustiblesTag.innerHTML += template;  
     });
 };
+
+function filtrarCombustible() {
+    const text = searchTextTag.value;
+    let nuevaLista = combustiblesJSON.filter(combustible => {
+        return combustible.nombre.toUpperCase().includes(text.toUpperCase()) // ||
+        // combustible.categoria.toUpperCase().includes(text.toUpperCase())
+        ;
+    });
+    pintarCombustibles(nuevaLista);
+}
 
 const cambiarVista = (number) =>{
     if (number===4){
@@ -110,45 +127,42 @@ const cargarFavoritos =()=>{
    });
 };
 
-function handleAddMoto() {
-    console.log("razaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+function seleccionarCombustible() {
     const listButtons = document.querySelectorAll(".agregar-carrito");
     listButtons.forEach(button => {
         button.addEventListener("click", function () {
             const idCombustible = this.dataset.id;
             const combustible = combustiblesJSON.find(combustible => combustible._id == idCombustible);
             
-            addMotoCart(combustible);
+            añadirCombustibleCarrito(combustible);
             calculateTotal();
         });
     });
 }
 
-function addMotoCart(combustible){
+function añadirCombustibleCarrito(combustible){
     carrito.push(combustible);
     carritoCombustiblesTag.innerHTML ="";
     carrito.forEach(combustible => {
-        
         carritoCombustiblesTag.innerHTML += `
         <tr>
             <td>${combustible.nombre}</td>
             <td>${combustible.precio}€</td>
             <td>1</td>
             <td>
-                <a href="#" class="borrar-combustible" data-id="${combustible._id}" > X </a>
+                <a href="#" class="borrar-combustible" data-id="${combustible._id}" onclick="borrarCombustible(${combustible._id})">X</a>
             </td>
         </tr>
         `;
     });
 }
 
-function calculateTotal() {
-    // Calcular total
-    let total = carrito.reduce((total, mot) => total + mot.precio, 0);
+function calculateTotal(){
+    let total = carrito.reduce((total, Combustible) => total + Combustible.precio, 0);
     carritoCombustiblesTag.innerHTML += `
-                   <tr>
-                       <td colspan="3">Total</td>
-                       <td>${total} €</td>
-                   </tr>
-               `;
+        <tr>
+            <td colspan="3">Total</td>
+            <td>${total} €</td>
+        </tr>
+    `;
 }

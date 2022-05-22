@@ -17,6 +17,10 @@
                 <li><a href="index.html"></a>Inicio</li>
             </ul>
         </nav>
+        <form action="#" id="busqueda" method="post" class="formulario">
+            <input id="buscador" class="u-full-width" type="text" placeholder="¿Qué combustible buscas?">
+            <input id="submit-buscador" type="submit" class="submit-buscador">
+        </form>
         <div class="submenu">
             <img src="img/cart.png" id="img-carrito">
             <div id="num-combustibles"></div>
@@ -27,12 +31,11 @@
                             <th>Nombre</th>
                             <th>Precio</th>
                             <th>Unidades</th>
-                            <th>Subtotal</th>
                         </tr>
                     </thead>
                     <tbody id="carritoCombustibles"></tbody>
                 </table>
-                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                <a href="#" id="vaciar-carrito" class="button u-full-width" onclick="vaciarCarrito()">Vaciar Carrito</a>
             </div>
         </div>
     </header>

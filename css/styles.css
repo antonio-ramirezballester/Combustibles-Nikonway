@@ -55,6 +55,31 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+.submit-buscador{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+#buscador{
+    color: black;
+}
+
+td, th {
+    padding: 7px;
+    text-align: center;
+}
+
+
 #num-combustibles{
     background-color: brown;
     font-weight: bold;
