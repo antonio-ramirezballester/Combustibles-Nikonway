@@ -2,6 +2,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const combustiblesSchema = new Schema({
+    id:{
+        type: Number
+    },
     nombre:{
         type: String
     },

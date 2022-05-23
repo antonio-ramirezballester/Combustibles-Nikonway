@@ -7,7 +7,8 @@
   "preciou": "0'80€/Kg",
   "stock": 726,
   "img": "turba_rubia.png",
-  "categoria": "Turba"
+  "categoria": "Turba",
+  "id": 1
 },{
   "_id": {
     "$oid": "627d14e421e08f856eb0158a"
@@ -17,200 +18,220 @@
   "preciou": "0'80€/Kg",
   "stock": 738,
   "img": "turba_negra.png",
-  "categoria": "Turba"
+  "categoria": "Turba",
+  "id": 2
 },{
   "_id": {
-    "$oid": "627d19de21e08f856eb015a5"
+    "$oid": "628bd46d22b0b66661188dc4"
   },
   "nombre": "Gas natural",
   "precio": 4.1,
   "preciou": "4'10€/L",
   "stock": 293,
   "img": "gas_natural.png",
-  "categoria": "Gas licuado"
+  "categoria": "Gas licuado",
+  "id": 3
 },{
   "_id": {
-    "$oid": "627d19f621e08f856eb015a6"
-  },
-  "nombre": "Propano",
-  "precio": 1.45,
-  "preciou": "1'45€/L",
-  "stock": 836,
-  "img": "propano.png",
-  "categoria": "Gas licuado"
-},{
-  "_id": {
-    "$oid": "627d1a2421e08f856eb015a7"
+    "$oid": "628bd4a122b0b66661188dc5"
   },
   "nombre": "Gus butano",
   "precio": 12,
   "preciou": "12€/12L",
   "stock": 195,
   "img": "butano.png",
-  "categoria": "gas licuado"
+  "categoria": "gas licuado",
+  "id": 4
 },{
   "_id": {
-    "$oid": "6273dfd7f5db5b2839ba5243"
+    "$oid": "628bd4c122b0b66661188dc6"
+  },
+  "nombre": "Propano",
+  "precio": 1.45,
+  "preciou": "1'45€/L",
+  "stock": 836,
+  "img": "propano.png",
+  "categoria": "Gas licuado",
+  "id": 5
+},{
+  "_id": {
+    "$oid": "628bd4e622b0b66661188dc7"
   },
   "nombre": "Leña de olivo",
   "precio": 0.18,
   "preciou": "0'18€/Kg",
   "stock": 746,
   "img": "leña_olivo.jpg",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 6
 },{
   "_id": {
-    "$oid": "6273e246f5db5b2839ba5245"
+    "$oid": "628bd4f022b0b66661188dc8"
   },
   "nombre": "Leña de roble",
   "precio": 0.1,
   "preciou": "0'10€/Kg",
   "stock": 985,
   "img": "leña_roble.jpg",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 7
 },{
   "_id": {
-    "$oid": "6273e292f5db5b2839ba5246"
+    "$oid": "628bd4fd22b0b66661188dc9"
   },
   "nombre": "Leña de encina",
   "precio": 0.19,
   "preciou": "0'19€/Kg",
   "stock": 121,
   "img": "leña_encina.jpg",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 8
 },{
   "_id": {
-    "$oid": "6273e2c6f5db5b2839ba5247"
-  },
-  "nombre": "Leña de pino",
-  "precio": 0.09,
-  "preciou": "0'09€/Kg",
-  "stock": 230,
-  "img": "leña_pino.jpg",
-  "categoria": "Leña"
-},{
-  "_id": {
-    "$oid": "6273e3fef5db5b2839ba5248"
+    "$oid": "628bd50522b0b66661188dca"
   },
   "nombre": "Sarmientos",
   "precio": 0.5,
   "preciou": "0'50€/Kg",
   "stock": 290,
   "img": "sarmientos.jpg",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 9
 },{
   "_id": {
-    "$oid": "6273e728f5db5b2839ba5249"
+    "$oid": "628bd51022b0b66661188dcb"
+  },
+  "nombre": "Sarmientos",
+  "precio": 0.5,
+  "preciou": "0'50€/Kg",
+  "stock": 290,
+  "img": "sarmientos.jpg",
+  "categoria": "Leña",
+  "id": 10
+},{
+  "_id": {
+    "$oid": "628bd6a722b0b66661188dcc"
   },
   "nombre": "Astillas",
   "precio": 0.35,
   "preciou": "0'35€/Kg",
   "stock": 207,
   "img": "astillas.jpg",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 11
 },{
   "_id": {
-    "$oid": "6273e781f5db5b2839ba524a"
+    "$oid": "628bd6b122b0b66661188dcd"
   },
   "nombre": "Pellets",
   "precio": 0.26,
   "preciou": "0'26€/Kg",
   "stock": 764,
   "img": "pellets.jpg",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 12
 },{
   "_id": {
-    "$oid": "6273e816f5db5b2839ba524b"
+    "$oid": "628bd6b922b0b66661188dce"
   },
   "nombre": "Briquetas",
   "precio": 0.41,
   "preciou": "0'41€/Kg",
   "stock": 537,
   "img": "briquetas.png",
-  "categoria": "Leña"
+  "categoria": "Leña",
+  "id": 13
 },{
   "_id": {
-    "$oid": "627d167221e08f856eb0158e"
+    "$oid": "628bd6c322b0b66661188dcf"
   },
   "nombre": "Gasolina E5 95",
   "precio": 1.15,
   "preciou": "1'15€/L",
   "stock": 998,
   "img": "gasolina.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 14
 },{
   "_id": {
-    "$oid": "627d199e21e08f856eb01599"
+    "$oid": "628bd6d022b0b66661188dd0"
   },
   "nombre": "Keroseno",
   "precio": 1.72,
   "preciou": "1'72€/L",
   "stock": 397,
   "img": "keroseno.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 15
 },{
   "_id": {
-    "$oid": "628647bc02a83c6883262d88"
+    "$oid": "628bd6de22b0b66661188dd1"
   },
   "nombre": "Carbón vegetal",
   "precio": 1.9,
   "preciou": "1'90€/Kg",
   "stock": 428,
   "img": "carbon_vegetal.png",
-  "categoria": "Carbón"
+  "categoria": "Carbón",
+  "id": 16
 },{
   "_id": {
-    "$oid": "628649cb02a83c6883262d89"
+    "$oid": "628bd6e522b0b66661188dd2"
   },
   "nombre": "Carbón",
   "precio": 1.41,
   "preciou": "1'41€/Kg",
   "stock": 521,
   "img": "carbon.png",
-  "categoria": "Carbón"
+  "categoria": "Carbón",
+  "id": 17
 },{
   "_id": {
-    "$oid": "62867b01b7f1c833b833eb60"
+    "$oid": "628bd6f722b0b66661188dd3"
   },
   "nombre": "Uranio",
   "precio": 49,
   "preciou": "49€/Kg",
   "stock": 1482,
   "img": "uranio.png",
-  "categoria": "Nuclear"
+  "categoria": "Nuclear",
+  "id": 18
 },{
   "_id": {
-    "$oid": "62877e46082b0f29b24a44e7"
+    "$oid": "628bd70222b0b66661188dd4"
   },
   "nombre": "Gasolina E10 95",
   "precio": 1.24,
   "preciou": "1'24€/L",
   "stock": 192,
   "img": "gasolina.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 19
 },{
   "_id": {
-    "$oid": "62877e9d082b0f29b24a44e8"
+    "$oid": "628bd70d22b0b66661188dd5"
   },
   "nombre": "Gasolina E5 98",
   "precio": 1.29,
   "preciou": "1'29€/L",
   "stock": 478,
   "img": "gasolina.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 20
 },{
   "_id": {
-    "$oid": "62877eab082b0f29b24a44e9"
+    "$oid": "628bd71922b0b66661188dd6"
   },
   "nombre": "Gasolina E10 98",
   "precio": 1.24,
   "preciou": "1'24€/L",
   "stock": 600,
   "img": "gasolina.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 21
 },{
   "_id": {
-    "$oid": "62877eb8082b0f29b24a44ea"
+    "$oid": "628bd72822b0b66661188dd7"
   },
   "nombre": "Diésel A",
   "precio": 1.15,
@@ -218,65 +239,71 @@
   "stock": 326,
   "img": "diesel.png",
   "Categoria": "Líquido",
-  "categoria": "Líquido"
+  "id": 4
 },{
   "_id": {
-    "$oid": "62877ed5082b0f29b24a44eb"
+    "$oid": "628bd73e22b0b66661188dd8"
   },
   "nombre": "Diésel A+",
   "precio": 1.2,
   "preciou": "1'20€/L",
   "stock": 162,
   "img": "diesel.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 22
 },{
   "_id": {
-    "$oid": "62877eed082b0f29b24a44ec"
+    "$oid": "628bd74c22b0b66661188dd9"
   },
   "nombre": "Diésel B",
   "precio": 0.9,
   "preciou": "0'90€/L",
   "stock": 806,
   "img": "diesel.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 23
 },{
   "_id": {
-    "$oid": "62877f61082b0f29b24a44ed"
+    "$oid": "628bd75722b0b66661188dda"
   },
   "nombre": "Diésel C",
   "precio": 1,
   "preciou": "1'00€/L",
   "stock": 840,
   "img": "diesel.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 24
 },{
   "_id": {
-    "$oid": "62877f7b082b0f29b24a44ee"
+    "$oid": "628bd76122b0b66661188ddb"
   },
   "nombre": "Biodiésel",
   "precio": 1.16,
   "preciou": "1'16€/L",
   "stock": 409,
   "img": "diesel.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 25
 },{
   "_id": {
-    "$oid": "62877fd6082b0f29b24a44ef"
+    "$oid": "628bd76a22b0b66661188ddc"
   },
   "nombre": "GPL",
   "precio": 0.5,
   "preciou": "0'50€/L",
   "stock": 632,
   "img": "diesel.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 26
 },{
   "_id": {
-    "$oid": "62877fe6082b0f29b24a44f0"
+    "$oid": "628bd77322b0b66661188ddd"
   },
   "nombre": "GNC",
   "precio": 1.7,
   "preciou": "1'70€/L",
   "stock": 716,
   "img": "diesel.png",
-  "categoria": "Líquido"
+  "categoria": "Líquido",
+  "id": 27
 }]

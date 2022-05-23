@@ -1,29 +1,29 @@
-Categoria,_id,categoria,img,nombre,precio,preciou,stock
-,627d14d721e08f856eb01589,Turba,turba_rubia.png,Turba rubia,0.9,"0'80€/Kg",726
-,627d14e421e08f856eb0158a,Turba,turba_negra.png,Turba negra,0.8,"0'80€/Kg",738
-,627d19de21e08f856eb015a5,Gas licuado,gas_natural.png,Gas natural,4.1,"4'10€/L",293
-,627d19f621e08f856eb015a6,Gas licuado,propano.png,Propano,1.45,"1'45€/L",836
-,627d1a2421e08f856eb015a7,gas licuado,butano.png,Gus butano,12,12€/12L,195
-,6273dfd7f5db5b2839ba5243,Leña,leña_olivo.jpg,Leña de olivo,0.18,"0'18€/Kg",746
-,6273e246f5db5b2839ba5245,Leña,leña_roble.jpg,Leña de roble,0.1,"0'10€/Kg",985
-,6273e292f5db5b2839ba5246,Leña,leña_encina.jpg,Leña de encina,0.19,"0'19€/Kg",121
-,6273e2c6f5db5b2839ba5247,Leña,leña_pino.jpg,Leña de pino,0.09,"0'09€/Kg",230
-,6273e3fef5db5b2839ba5248,Leña,sarmientos.jpg,Sarmientos,0.5,"0'50€/Kg",290
-,6273e728f5db5b2839ba5249,Leña,astillas.jpg,Astillas,0.35,"0'35€/Kg",207
-,6273e781f5db5b2839ba524a,Leña,pellets.jpg,Pellets,0.26,"0'26€/Kg",764
-,6273e816f5db5b2839ba524b,Leña,briquetas.png,Briquetas,0.41,"0'41€/Kg",537
-,627d167221e08f856eb0158e,Líquido,gasolina.png,Gasolina E5 95,1.15,"1'15€/L",998
-,627d199e21e08f856eb01599,Líquido,keroseno.png,Keroseno,1.72,"1'72€/L",397
-,628647bc02a83c6883262d88,Carbón,carbon_vegetal.png,Carbón vegetal,1.9,"1'90€/Kg",428
-,628649cb02a83c6883262d89,Carbón,carbon.png,Carbón,1.41,"1'41€/Kg",521
-,62867b01b7f1c833b833eb60,Nuclear,uranio.png,Uranio,49,49€/Kg,1482
-,62877e46082b0f29b24a44e7,Líquido,gasolina.png,Gasolina E10 95,1.24,"1'24€/L",192
-,62877e9d082b0f29b24a44e8,Líquido,gasolina.png,Gasolina E5 98,1.29,"1'29€/L",478
-,62877eab082b0f29b24a44e9,Líquido,gasolina.png,Gasolina E10 98,1.24,"1'24€/L",600
-Líquido,62877eb8082b0f29b24a44ea,Líquido,diesel.png,Diésel A,1.15,"1'15€/L",326
-,62877ed5082b0f29b24a44eb,Líquido,diesel.png,Diésel A+,1.2,"1'20€/L",162
-,62877eed082b0f29b24a44ec,Líquido,diesel.png,Diésel B,0.9,"0'90€/L",806
-,62877f61082b0f29b24a44ed,Líquido,diesel.png,Diésel C,1,"1'00€/L",840
-,62877f7b082b0f29b24a44ee,Líquido,diesel.png,Biodiésel,1.16,"1'16€/L",409
-,62877fd6082b0f29b24a44ef,Líquido,diesel.png,GPL,0.5,"0'50€/L",632
-,62877fe6082b0f29b24a44f0,Líquido,diesel.png,GNC,1.7,"1'70€/L",716
+Categoria,_id,categoria,id,img,nombre,precio,preciou,stock
+,627d14d721e08f856eb01589,Turba,1,turba_rubia.png,Turba rubia,0.9,"0'80€/Kg",726
+,627d14e421e08f856eb0158a,Turba,2,turba_negra.png,Turba negra,0.8,"0'80€/Kg",738
+,628bd46d22b0b66661188dc4,Gas licuado,3,gas_natural.png,Gas natural,4.1,"4'10€/L",293
+,628bd4a122b0b66661188dc5,gas licuado,4,butano.png,Gus butano,12,12€/12L,195
+,628bd4c122b0b66661188dc6,Gas licuado,5,propano.png,Propano,1.45,"1'45€/L",836
+,628bd4e622b0b66661188dc7,Leña,6,leña_olivo.jpg,Leña de olivo,0.18,"0'18€/Kg",746
+,628bd4f022b0b66661188dc8,Leña,7,leña_roble.jpg,Leña de roble,0.1,"0'10€/Kg",985
+,628bd4fd22b0b66661188dc9,Leña,8,leña_encina.jpg,Leña de encina,0.19,"0'19€/Kg",121
+,628bd50522b0b66661188dca,Leña,9,sarmientos.jpg,Sarmientos,0.5,"0'50€/Kg",290
+,628bd51022b0b66661188dcb,Leña,10,sarmientos.jpg,Sarmientos,0.5,"0'50€/Kg",290
+,628bd6a722b0b66661188dcc,Leña,11,astillas.jpg,Astillas,0.35,"0'35€/Kg",207
+,628bd6b122b0b66661188dcd,Leña,12,pellets.jpg,Pellets,0.26,"0'26€/Kg",764
+,628bd6b922b0b66661188dce,Leña,13,briquetas.png,Briquetas,0.41,"0'41€/Kg",537
+,628bd6c322b0b66661188dcf,Líquido,14,gasolina.png,Gasolina E5 95,1.15,"1'15€/L",998
+,628bd6d022b0b66661188dd0,Líquido,15,keroseno.png,Keroseno,1.72,"1'72€/L",397
+,628bd6de22b0b66661188dd1,Carbón,16,carbon_vegetal.png,Carbón vegetal,1.9,"1'90€/Kg",428
+,628bd6e522b0b66661188dd2,Carbón,17,carbon.png,Carbón,1.41,"1'41€/Kg",521
+,628bd6f722b0b66661188dd3,Nuclear,18,uranio.png,Uranio,49,49€/Kg,1482
+,628bd70222b0b66661188dd4,Líquido,19,gasolina.png,Gasolina E10 95,1.24,"1'24€/L",192
+,628bd70d22b0b66661188dd5,Líquido,20,gasolina.png,Gasolina E5 98,1.29,"1'29€/L",478
+,628bd71922b0b66661188dd6,Líquido,21,gasolina.png,Gasolina E10 98,1.24,"1'24€/L",600
+Líquido,628bd72822b0b66661188dd7,,4,diesel.png,Diésel A,1.15,"1'15€/L",326
+,628bd73e22b0b66661188dd8,Líquido,22,diesel.png,Diésel A+,1.2,"1'20€/L",162
+,628bd74c22b0b66661188dd9,Líquido,23,diesel.png,Diésel B,0.9,"0'90€/L",806
+,628bd75722b0b66661188dda,Líquido,24,diesel.png,Diésel C,1,"1'00€/L",840
+,628bd76122b0b66661188ddb,Líquido,25,diesel.png,Biodiésel,1.16,"1'16€/L",409
+,628bd76a22b0b66661188ddc,Líquido,26,diesel.png,GPL,0.5,"0'50€/L",632
+,628bd77322b0b66661188ddd,Líquido,27,diesel.png,GNC,1.7,"1'70€/L",716

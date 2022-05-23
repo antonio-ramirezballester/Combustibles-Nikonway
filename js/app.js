@@ -133,7 +133,6 @@ function seleccionarCombustible() {
         button.addEventListener("click", function () {
             const idCombustible = this.dataset.id;
             const combustible = combustiblesJSON.find(combustible => combustible._id == idCombustible);
-            
             añadirCombustibleCarrito(combustible);
             calculateTotal();
         });
@@ -142,6 +141,7 @@ function seleccionarCombustible() {
 
 function añadirCombustibleCarrito(combustible){
     carrito.push(combustible);
+    console.log(carrito);
     carritoCombustiblesTag.innerHTML ="";
     carrito.forEach(combustible => {
         carritoCombustiblesTag.innerHTML += `
@@ -150,9 +150,31 @@ function añadirCombustibleCarrito(combustible){
             <td>${combustible.precio}€</td>
             <td>1</td>
             <td>
-                <a href="#" class="borrar-combustible" data-id="${combustible._id}" onclick="borrarCombustible(${combustible._id})">X</a>
+                <a href="#" class="borrar-combustible" data-id="${combustible._id}" onclick="borrarCombustible(${combustible.id})">X</a>
             </td>
-        </tr>
+        </tr
+        `;
+    });
+}
+
+function vaciarCarrito(){
+    carrito = []
+    carritoCombustiblesTag.innerHTML ="";
+}
+
+function borrarCombustible(combustible){
+    carrito.pop(combustible);
+    carritoCombustiblesTag.innerHTML ="";
+    carrito.forEach(combustible => {
+        carritoCombustiblesTag.innerHTML += `
+        <tr>
+            <td>${combustible.nombre}</td>
+            <td>${combustible.precio}€</td>
+            <td>1</td>
+            <td>
+                <a href="#" class="borrar-combustible" data-id="${combustible._id} onclick="borrarCombustible(${combustible.id})"">X</a>
+            </td>
+        </tr
         `;
     });
 }
