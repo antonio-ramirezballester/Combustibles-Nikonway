@@ -50,9 +50,7 @@ const pintarCombustibles = (combustibles) => {
 function filtrarCombustible() {
     const text = searchTextTag.value;
     let nuevaLista = combustiblesJSON.filter(combustible => {
-        return combustible.nombre.toUpperCase().includes(text.toUpperCase()) ||
-        combustible.categoria.toUpperCase().includes(text.toUpperCase())
-        ;
+        return combustible.nombre.toUpperCase().includes(text.toUpperCase()) || combustible.categoria.toUpperCase().includes(text.toUpperCase());
     });
     pintarCombustibles(nuevaLista);
 }
@@ -132,47 +130,44 @@ function seleccionarCombustible() {
     listButtons.forEach(button => {
         button.addEventListener("click", function () {
             const idCombustible = this.dataset.id;
-            const combustible = combustiblesJSON.find(combustible => combustible._id == idCombustible);
-            añadirCombustibleCarrito(combustible);
+            const combustibleAr = combustiblesJSON.find(combustible => combustible._id == idCombustible);
+            let nuevoCombustible = {
+                "_id":combustibleAr._id,
+                "id":combustibleAr.id,
+                "nombre":combustibleAr.nombre,
+                "precio":combustibleAr.precio,
+                "unidades":1
+            };
+            if (carrito.some(combustible=>combustible._id==idCombustible)){
+                carrito=carrito.map(combustible=>{
+                    if(combustible._id!=idCombustible) return combustible;
+                    if (combustibleAr.stock>combustible.unidades){
+                        combustible.unidades+=1;
+                    } else{
+                        alert("Ya no hay stock");
+                    }
+                    return combustible;
+                });
+            }else{
+                carrito.push(nuevoCombustible);
+            };
+            añadirCombustibleCarrito();
             calculateTotal();
         });
     });
 }
 
-function añadirCombustibleCarrito(combustible){
-    carrito.push(combustible);
-    console.log(carrito);
+function añadirCombustibleCarrito(){
     carritoCombustiblesTag.innerHTML ="";
     carrito.forEach(combustible => {
         carritoCombustiblesTag.innerHTML += `
         <tr>
             <td>${combustible.nombre}</td>
-            <td>${combustible.precio}€</td>
-            <td>1</td>
+            <td>${combustible.precio} &euro;</td>
+            <td>${combustible.unidades}</td>
+            <td>${(combustible.precio*combustible.unidades).toFixed(2)} &euro;</td>
             <td>
-                <a href="#" class="borrar-combustible" data-id="${combustible._id}" onclick="borrarCombustible(${combustible.id})">X</a>
-            </td>
-        </tr
-        `;
-    });
-}
-
-function vaciarCarrito(){
-    carrito = []
-    carritoCombustiblesTag.innerHTML ="";
-}
-
-function borrarCombustible(combustible){
-    carrito.pop(combustible);
-    carritoCombustiblesTag.innerHTML ="";
-    carrito.forEach(combustible => {
-        carritoCombustiblesTag.innerHTML += `
-        <tr>
-            <td>${combustible.nombre}</td>
-            <td>${combustible.precio}€</td>
-            <td>1</td>
-            <td>
-                <a href="#" class="borrar-combustible" data-id="${combustible._id} onclick="borrarCombustible(${combustible.id})"">X</a>
+                <a href="#" class="borrar-combustible" onclick="borrarCombustible(${combustible.id})">X</a>
             </td>
         </tr
         `;
@@ -180,11 +175,23 @@ function borrarCombustible(combustible){
 }
 
 function calculateTotal(){
-    let total = carrito.reduce((total, Combustible) => total + Combustible.precio, 0);
+    let total = carrito.reduce((total, combustible) => total + (combustible.precio*combustible.unidades), 0);
+    total = total.toFixed(2);
     carritoCombustiblesTag.innerHTML += `
         <tr>
             <td colspan="3">Total</td>
-            <td>${total} €</td>
+            <td>${total} &euro;</td>
         </tr>
     `;
+}
+
+function borrarCombustible(idCombustible){
+    carrito = carrito.filter(combustible=>combustible.id!=idCombustible);
+    añadirCombustibleCarrito();
+    calculateTotal();
+}
+
+function vaciarCarrito(){
+    carrito = []
+    carritoCombustiblesTag.innerHTML ="";
 }

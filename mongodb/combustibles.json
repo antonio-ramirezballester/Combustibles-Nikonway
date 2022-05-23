@@ -239,7 +239,7 @@
   "stock": 326,
   "img": "diesel.png",
   "Categoria": "Líquido",
-  "id": 4
+  "id": 22
 },{
   "_id": {
     "$oid": "628bd73e22b0b66661188dd8"
@@ -250,7 +250,7 @@
   "stock": 162,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 22
+  "id": 23
 },{
   "_id": {
     "$oid": "628bd74c22b0b66661188dd9"
@@ -261,7 +261,7 @@
   "stock": 806,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 23
+  "id": 24
 },{
   "_id": {
     "$oid": "628bd75722b0b66661188dda"
@@ -272,7 +272,7 @@
   "stock": 840,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 24
+  "id": 25
 },{
   "_id": {
     "$oid": "628bd76122b0b66661188ddb"
@@ -283,7 +283,7 @@
   "stock": 409,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 25
+  "id": 26
 },{
   "_id": {
     "$oid": "628bd76a22b0b66661188ddc"
@@ -294,7 +294,7 @@
   "stock": 632,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 26
+  "id": 27
 },{
   "_id": {
     "$oid": "628bd77322b0b66661188ddd"
@@ -305,5 +305,5 @@
   "stock": 716,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 27
+  "id": 28
 }]

@@ -10,12 +10,13 @@ function getLista(){
             data.forEach( (combustible, index)=>{
                 content.innerHTML += `
                     <tr>
-                        <th scope="row">${(index+1)}</th>
+                        <th scope="row">${combustible.id}</th>
                         <td>${combustible.nombre}</td>
                         <td>${combustible.categoria}</td>
                         <td>${combustible.precio}</td>
                         <td>${combustible.preciou}</td>
                         <td>${combustible.stock}</td>
+                        <td>${combustible.img}</td>
                         <td>
                             <span data-toggle="modal" data-target="#modal-edicion">
                                 <button onclick="editarCombustible('${combustible._id}')" class="btn btn-dark btn-sm" role="button" title="Editar"><i class="fas fa-pencil-alt"></i></button>
@@ -30,11 +31,13 @@ function getLista(){
 
 function insertarCombustible() {
     let combustibleData = {
+        "id": document.querySelector("#id").value,
         "nombre": document.querySelector("#nombre").value,
         "categoria": document.querySelector("#categoria").value,
         "precio": document.querySelector("#precio").value,
         "preciou": document.querySelector("#preciou").value,
         "stock": document.querySelector("#stock").value,
+        "img": document.querySelector("#img").value,
     };
 
     fetch(dominioAPI, {
@@ -55,14 +58,15 @@ function insertarCombustible() {
 }
 
 function modificaCombustible(id) {
-    // alert(id);
     let combustibleData = {
-        "_id": document.querySelector("#id").value,
+        "_id": document.querySelector("#_id").value,
+        "id": document.querySelector("#id").value,
         "nombre": document.querySelector("#nombre").value,
         "categoria": document.querySelector("#categoria").value,
         "precio": document.querySelector("#precio").value,
         "preciou": document.querySelector("#preciou").value,
         "stock": document.querySelector("#stock").value,
+        "img": document.querySelector("#img").value,
     };
     console.log("Datos a modificar", combustibleData);
 
@@ -89,12 +93,14 @@ function editarCombustible(id) {
     fetch(`${dominioAPI}/${id}`, { method: 'GET' })
         .then(response => response.json())
         .then(data => {
-            document.querySelector("#id").value = data._id;
+            document.querySelector("#_id").value = data._id;
+            document.querySelector("#id").value = data.id;
             document.querySelector("#nombre").value = data.nombre;
             document.querySelector("#categoria").value = data.categoria;
             document.querySelector("#precio").value = data.precio;
             document.querySelector("#preciou").value = data.preciou;
             document.querySelector("#stock").value = data.stock;
+            document.querySelector("#img").value = data.img;
             myModal.show();
         })
         .catch(error => {
@@ -113,7 +119,7 @@ function eliminarCombustible(id) {
 }
 
 function guardarCombustible() {
-    const id = document.querySelector("#id").value;
+    const id = document.querySelector("#_id").value;
     if (id == "")
         insertarCombustible();
     else
@@ -123,7 +129,7 @@ function guardarCombustible() {
 }
 
 function nuevoCombustible() {
-    document.querySelector("#id").value = "";
+    document.querySelector("#_id").value = "";
     document.querySelector("#form-data-combustible").reset();
     myModal.show();
 }

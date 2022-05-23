@@ -20,10 +20,10 @@ Categoria,_id,categoria,id,img,nombre,precio,preciou,stock
 ,628bd70222b0b66661188dd4,Líquido,19,gasolina.png,Gasolina E10 95,1.24,"1'24€/L",192
 ,628bd70d22b0b66661188dd5,Líquido,20,gasolina.png,Gasolina E5 98,1.29,"1'29€/L",478
 ,628bd71922b0b66661188dd6,Líquido,21,gasolina.png,Gasolina E10 98,1.24,"1'24€/L",600
-Líquido,628bd72822b0b66661188dd7,,4,diesel.png,Diésel A,1.15,"1'15€/L",326
-,628bd73e22b0b66661188dd8,Líquido,22,diesel.png,Diésel A+,1.2,"1'20€/L",162
-,628bd74c22b0b66661188dd9,Líquido,23,diesel.png,Diésel B,0.9,"0'90€/L",806
-,628bd75722b0b66661188dda,Líquido,24,diesel.png,Diésel C,1,"1'00€/L",840
-,628bd76122b0b66661188ddb,Líquido,25,diesel.png,Biodiésel,1.16,"1'16€/L",409
-,628bd76a22b0b66661188ddc,Líquido,26,diesel.png,GPL,0.5,"0'50€/L",632
-,628bd77322b0b66661188ddd,Líquido,27,diesel.png,GNC,1.7,"1'70€/L",716
+Líquido,628bd72822b0b66661188dd7,,22,diesel.png,Diésel A,1.15,"1'15€/L",326
+,628bd73e22b0b66661188dd8,Líquido,23,diesel.png,Diésel A+,1.2,"1'20€/L",162
+,628bd74c22b0b66661188dd9,Líquido,24,diesel.png,Diésel B,0.9,"0'90€/L",806
+,628bd75722b0b66661188dda,Líquido,25,diesel.png,Diésel C,1,"1'00€/L",840
+,628bd76122b0b66661188ddb,Líquido,26,diesel.png,Biodiésel,1.16,"1'16€/L",409
+,628bd76a22b0b66661188ddc,Líquido,27,diesel.png,GPL,0.5,"0'50€/L",632
+,628bd77322b0b66661188ddd,Líquido,28,diesel.png,GNC,1.7,"1'70€/L",716

@@ -19,6 +19,9 @@ const combustiblesSchema = new Schema({
     },
     stock:{
         type: Number
+    },
+    img:{
+        type: String
     }
 }, 
 { versionKey: false }

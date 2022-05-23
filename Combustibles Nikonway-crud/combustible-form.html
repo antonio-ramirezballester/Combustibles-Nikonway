@@ -21,12 +21,13 @@
             <table class="table">
                <thead>
                   <tr>
-                     <th scope="col">#</th>
+                     <th scope="col">ID</th>
                      <th scope="col">Nombre</th>
                      <th scope="col">Categoría</th>
                      <th scope="col">Precio</th>
                      <th scope="col">Precio/U</th>
                      <th scope="col">Stock</th>
+                     <th scope="col">imagen</th>
                      <th scope="col">Acciones</th>
                      <th scope="col"><button onclick="nuevoCombustible()" class="btn btn-dark btn-sm"><i class="fas fa-plus"
                         aria-hidden="true"></i></button> </th>
@@ -47,7 +48,11 @@
             </div>
             <div class="modal-body">
                <form id="form-data-combustible">
-                  <input type="hidden" id="id" name="id" value="" />
+                  <input type="hidden" id="_id" name="_id" value="" />
+                  <div class="form-group">
+                     <label class="form-label text-light"> ID:</label>
+                     <input type="text" id="id" name="id" class="form-control" size="30" value="" />
+                  </div>
                   <div class="form-group">
                      <label class="form-label text-light"> Nombre:</label>
                      <input type="text" id="nombre" name="nombre" class="form-control" size="30" value="" />
@@ -67,6 +72,10 @@
                   <div class="form-group">
                      <label class="form-label text-light">Stock:</label>
                      <input type="text" id="stock" name="stock" class="form-control" size="30" value="" />
+                  </div>
+                  <div class="form-group">
+                     <label class="form-label text-light">imagen:</label>
+                     <input type="text" id="img" name="img" class="form-control" size="30" value="" />
                   </div>
                </form>
             </div>
