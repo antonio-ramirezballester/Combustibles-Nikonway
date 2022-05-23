@@ -38,7 +38,7 @@ const pintarCombustibles = (combustibles) => {
                 </div>
                 <h1>${combustible.nombre}</h1>
                 <img src="./img/${combustible.img}" alt="">
-                <p>DESCRIPCIÓN DEL COMBUSTIBLE</p>
+                <p>Categoría: ${combustible.categoria}</p>
                 <p>Precio: ${combustible.preciou}</p>
                 <p>Stock: ${combustible.stock}</p>
                 <p><a href="#" class="btnCombustibles agregar-carrito" data-id="${combustible._id}">Añadir al carrito &raquo;</a></p>
@@ -50,8 +50,8 @@ const pintarCombustibles = (combustibles) => {
 function filtrarCombustible() {
     const text = searchTextTag.value;
     let nuevaLista = combustiblesJSON.filter(combustible => {
-        return combustible.nombre.toUpperCase().includes(text.toUpperCase()) // ||
-        // combustible.categoria.toUpperCase().includes(text.toUpperCase())
+        return combustible.nombre.toUpperCase().includes(text.toUpperCase()) ||
+        combustible.categoria.toUpperCase().includes(text.toUpperCase())
         ;
     });
     pintarCombustibles(nuevaLista);

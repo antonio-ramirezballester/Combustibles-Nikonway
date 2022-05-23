@@ -5,6 +5,9 @@ const combustiblesSchema = new Schema({
     nombre:{
         type: String
     },
+    categoria:{
+        type: String
+    },
     precio:{
         type: Number
     },

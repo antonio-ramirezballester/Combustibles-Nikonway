@@ -1,6 +1,6 @@
 const dominioAPI = "http://localhost:5000/combustibles";
 
-function getLista() {
+function getLista(){
     fetch(dominioAPI)
         .then(result => result.json())
         .then(data => {
@@ -12,14 +12,15 @@ function getLista() {
                     <tr>
                         <th scope="row">${(index+1)}</th>
                         <td>${combustible.nombre}</td>
+                        <td>${combustible.categoria}</td>
                         <td>${combustible.precio}</td>
                         <td>${combustible.preciou}</td>
                         <td>${combustible.stock}</td>
                         <td>
                             <span data-toggle="modal" data-target="#modal-edicion">
-                                <button onclick="editarCurso('${combustible._id}')" class="btn btn-dark btn-sm" role="button" title="Editar"><i class="fas fa-pencil-alt"></i></button>
+                                <button onclick="editarCombustible('${combustible._id}')" class="btn btn-dark btn-sm" role="button" title="Editar"><i class="fas fa-pencil-alt"></i></button>
                             </span>
-                                <button onclick="eliminarCurso('${combustible._id}')" class="btn btn-dark btn-sm" title="Eliminar"><i class="fas fa-trash" aria-hidden="true"></i></button>
+                                <button onclick="eliminarCombustible('${combustible._id}')" class="btn btn-dark btn-sm" title="Eliminar"><i class="fas fa-trash" aria-hidden="true"></i></button>
                         </td>
                     </tr>
                     `;
@@ -27,9 +28,10 @@ function getLista() {
         });
 }
 
-function insertarCurso() {
-    let cursoData = {
+function insertarCombustible() {
+    let combustibleData = {
         "nombre": document.querySelector("#nombre").value,
+        "categoria": document.querySelector("#categoria").value,
         "precio": document.querySelector("#precio").value,
         "preciou": document.querySelector("#preciou").value,
         "stock": document.querySelector("#stock").value,
@@ -41,7 +43,7 @@ function insertarCurso() {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(cursoData)
+        body: JSON.stringify(combustibleData)
     })
         .then(response => {
             response.json();
@@ -52,16 +54,17 @@ function insertarCurso() {
 
 }
 
-function modificaCurso(id) {
+function modificaCombustible(id) {
     // alert(id);
-    let cursoData = {
+    let combustibleData = {
         "_id": document.querySelector("#id").value,
         "nombre": document.querySelector("#nombre").value,
+        "categoria": document.querySelector("#categoria").value,
         "precio": document.querySelector("#precio").value,
         "preciou": document.querySelector("#preciou").value,
         "stock": document.querySelector("#stock").value,
     };
-    console.log("Datos a modificar", cursoData);
+    console.log("Datos a modificar", combustibleData);
 
     fetch(`${dominioAPI}/${id}`, {
         method: 'PUT',
@@ -69,7 +72,7 @@ function modificaCurso(id) {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(cursoData)
+        body: JSON.stringify(combustibleData)
     })
         .then(response => {
             alert("Combustible modificado");
@@ -82,12 +85,13 @@ function modificaCurso(id) {
 
 }
 
-function editarCurso(id) {
+function editarCombustible(id) {
     fetch(`${dominioAPI}/${id}`, { method: 'GET' })
         .then(response => response.json())
         .then(data => {
             document.querySelector("#id").value = data._id;
             document.querySelector("#nombre").value = data.nombre;
+            document.querySelector("#categoria").value = data.categoria;
             document.querySelector("#precio").value = data.precio;
             document.querySelector("#preciou").value = data.preciou;
             document.querySelector("#stock").value = data.stock;
@@ -98,7 +102,7 @@ function editarCurso(id) {
         });
 }
 
-function eliminarCurso(id) {
+function eliminarCombustible(id) {
     fetch("http://localhost:5000/combustibles/" + id, { method: 'DELETE' })
         .then(response => {
             getLista();
@@ -108,18 +112,18 @@ function eliminarCurso(id) {
         .catch(error => error);
 }
 
-function guardarCurso() {
+function guardarCombustible() {
     const id = document.querySelector("#id").value;
     if (id == "")
-        insertarCurso();
+        insertarCombustible();
     else
-        modificaCurso(id);
+        modificaCombustible(id);
 
     myModal.hide();
 }
 
-function nuevoCurso() {
+function nuevoCombustible() {
     document.querySelector("#id").value = "";
-    document.querySelector("#form-data-curso").reset();
+    document.querySelector("#form-data-combustible").reset();
     myModal.show();
 }

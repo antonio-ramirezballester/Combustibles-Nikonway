@@ -23,11 +23,12 @@
                   <tr>
                      <th scope="col">#</th>
                      <th scope="col">Nombre</th>
+                     <th scope="col">Categoría</th>
                      <th scope="col">Precio</th>
                      <th scope="col">Precio/U</th>
                      <th scope="col">Stock</th>
                      <th scope="col">Acciones</th>
-                     <th scope="col"><button onclick="nuevoCurso()" class="btn btn-dark btn-sm"><i class="fas fa-plus"
+                     <th scope="col"><button onclick="nuevoCombustible()" class="btn btn-dark btn-sm"><i class="fas fa-plus"
                         aria-hidden="true"></i></button> </th>
                   </tr>
                </thead>
@@ -45,11 +46,15 @@
                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-               <form id="form-data-curso">
+               <form id="form-data-combustible">
                   <input type="hidden" id="id" name="id" value="" />
                   <div class="form-group">
                      <label class="form-label text-light"> Nombre:</label>
                      <input type="text" id="nombre" name="nombre" class="form-control" size="30" value="" />
+                  </div>
+                  <div class="form-group">
+                     <label class="form-label text-light"> Categoría:</label>
+                     <input type="text" id="categoria" name="categoria" class="form-control" size="30" value="" />
                   </div>
                   <div class="form-group">
                      <label class="form-label text-light">Precio:</label>
@@ -68,7 +73,7 @@
             <div class="modal-footer">
                <button id="btn-order-cancel" type="button" class="btn btn-dark"
                   data-bs-dismiss="modal">Cancelar</button>
-               <button id="btn-order-post" onclick="guardarCurso()" type="button"
+               <button id="btn-order-post" onclick="guardarCombustible()" type="button"
                   class="btn btn-dark">Guardar</button>
 
             </div>
@@ -81,7 +86,7 @@
       crossorigin="anonymous"></script>
 
    <script src="./js/app.js"></script>
-   <script src="./js/CursoForm.js"></script>
+   <script src="./js/CombustibleForm.js"></script>
 </body>
 
 </html>

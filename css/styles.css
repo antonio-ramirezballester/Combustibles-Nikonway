@@ -56,17 +56,10 @@ nav ul li a:hover{
 }
 
 .submit-buscador{
-    position: absolute;
-    right: 0;
-    top: 0;
+    margin-top: 5px;
+    background-color: var(--negro);
     height: 100%;
-    padding: 0;
-    display: block;
-    text-indent: -9999px;
-    width: 50px;
-    background-image: url(../img/lupa.png);
-    background-position: right center;
-    background-repeat: no-repeat;
+    width: 70px;
     border: none;
 }
 
@@ -101,6 +94,7 @@ td, th {
 }
 
 .submenu{
+    margin-left: 30px;
     position: relative;
 }
 
