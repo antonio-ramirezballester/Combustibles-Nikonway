@@ -8,7 +8,8 @@
   "stock": 726,
   "img": "turba_rubia.png",
   "categoria": "Turba",
-  "id": 1
+  "id": 1,
+  "descripcion": "Es un material orgánico procedente de la descomposición de vegetales como el musgo Sphagnum a lo largo de miles de años en una cuenca lacustre de origen glaciar. Se produce en condiciones climatológicas de frío extremo, elevada pluviometría y bajos índices de radiación solar."
 },{
   "_id": {
     "$oid": "627d14e421e08f856eb0158a"
@@ -19,7 +20,8 @@
   "stock": 738,
   "img": "turba_negra.png",
   "categoria": "Turba",
-  "id": 2
+  "id": 2,
+  "descripcion": "Son turbas en que la materia orgánica está bastante descompuesta, por lo que son muy pobres en nutrientes, pero también resultan idóneas para el desarrollo de todo tipo de plantas si se les aportan los nutrientes necesarios."
 },{
   "_id": {
     "$oid": "628bd46d22b0b66661188dc4"
@@ -30,18 +32,20 @@
   "stock": 293,
   "img": "gas_natural.png",
   "categoria": "Gas licuado",
-  "id": 3
+  "id": 3,
+  "descripcion": "El gas natural es un hidrocarburo mezcla de gases ligeros de origen natural. Principalmente contiene metano, normalmente incluye cantidades variables de otros alcanos y a veces un pequeño porcentaje de dióxido de carbono, nitrógeno, ácido sulfhídrico y helio."
 },{
   "_id": {
     "$oid": "628bd4a122b0b66661188dc5"
   },
-  "nombre": "Gus butano",
+  "nombre": "Gas butano",
   "precio": 12,
   "preciou": "12€/12L",
   "stock": 195,
   "img": "butano.png",
-  "categoria": "gas licuado",
-  "id": 4
+  "categoria": "Gas licuado",
+  "id": 4,
+  "descripcion": "El butano, también llamado n-butano, es un hidrocarburo saturado, parafínico o alifático, inflamable, gaseoso que se licúa a presión atmosférica a -0,5 °C, formado por cuatro átomos de carbono y por diez de hidrógeno, cuya fórmula química es C₄H₁₀"
 },{
   "_id": {
     "$oid": "628bd4c122b0b66661188dc6"
@@ -52,7 +56,8 @@
   "stock": 836,
   "img": "propano.png",
   "categoria": "Gas licuado",
-  "id": 5
+  "id": 5,
+  "descripcion": "El propano es un gas licuado del petróleo (GLP) que se obtiene de yacimientos de petróleo y de gas natural. Este gas tiene muchas similitudes con el gas butano ya que tienen características, orígenes y usos muy parecidos. Los principales usos del propano son la calefacción, cocina y agua caliente sanitaria."
 },{
   "_id": {
     "$oid": "628bd4e622b0b66661188dc7"
@@ -63,7 +68,8 @@
   "stock": 746,
   "img": "leña_olivo.jpg",
   "categoria": "Leña",
-  "id": 6
+  "id": 6,
+  "descripcion": "Lo que destaca de esta madera de olivo es que produce una gran cantidad de llama, lo que le hace ser uno de los candidatos más ideales para usarla como leña de calefacción en estufas o chimeneas. Su madera es muy apreciada y forma parte de las principales opciones a tomar por su alto nivel calorífico."
 },{
   "_id": {
     "$oid": "628bd4f022b0b66661188dc8"
@@ -74,7 +80,8 @@
   "stock": 985,
   "img": "leña_roble.jpg",
   "categoria": "Leña",
-  "id": 7
+  "id": 7,
+  "descripcion": "La leña de roble es altamente recomendada para estufas abiertas, barbacoas y hornos de asar ya que tiene un poder calorífico, una dureza y una durabilidad muy alta."
 },{
   "_id": {
     "$oid": "628bd4fd22b0b66661188dc9"
@@ -85,7 +92,8 @@
   "stock": 121,
   "img": "leña_encina.jpg",
   "categoria": "Leña",
-  "id": 8
+  "id": 8,
+  "descripcion": "La leña de encina es una leña dura y consistente, de alto peso especifico y gran poder calorífico. Al quemar a más temperatura proporciona mucho calor y gracias a su dureza se consigue un fuego duradero. Ideal para cocinar por la cantidad y calidad de sus ascuas, es genial para barbacoas, arroces o espetos."
 },{
   "_id": {
     "$oid": "628bd50522b0b66661188dca"
@@ -96,18 +104,8 @@
   "stock": 290,
   "img": "sarmientos.jpg",
   "categoria": "Leña",
-  "id": 9
-},{
-  "_id": {
-    "$oid": "628bd51022b0b66661188dcb"
-  },
-  "nombre": "Sarmientos",
-  "precio": 0.5,
-  "preciou": "0'50€/Kg",
-  "stock": 290,
-  "img": "sarmientos.jpg",
-  "categoria": "Leña",
-  "id": 10
+  "id": 9,
+  "descripcion": "El sarmiento se usa para hacer barbacoas, ya que son limpios y fáciles de usar. Normalmente el producto viene envasado en bolsas de papel con asas. Para su utilización sólo tendrás que prender fuego a sus extremos y el encendido es inmediato e intenso. Una vez extendida la llama, obtendremos la brasa sobre las que colocaremos la parrilla para proceder al asado. La duración aproximada de la brasa es de 30 minutos aproximadamente."
 },{
   "_id": {
     "$oid": "628bd6a722b0b66661188dcc"
@@ -118,7 +116,8 @@
   "stock": 207,
   "img": "astillas.jpg",
   "categoria": "Leña",
-  "id": 11
+  "id": 11,
+  "descripcion": "Se dice astilla forestal al combustible que procede de la trituración de biomasa forestal no utilizable para aplicaciones con valor añadido superior. En este caso, el término se suele usar en singular (astilla) refiriéndose al conjunto de fragmentos o astillas. Su poder calorífico, puede oscilar entre las 3.000 y las 3.300 kcal / kg, en función de la especie utilizada."
 },{
   "_id": {
     "$oid": "628bd6b122b0b66661188dcd"
@@ -129,7 +128,8 @@
   "stock": 764,
   "img": "pellets.jpg",
   "categoria": "Leña",
-  "id": 12
+  "id": 12,
+  "descripcion": "Los pellets son un producto totalmente natural, catalogado como biomasa solida, el cual esta formado por cilindros muy pequeños, de unos pocos milímetros de diámetro. Elaborados a partir de serrín natural seco, sin ningún aditivo, ya que se utiliza la propia lignina que contiene el serrín como aglomerante, comprimiendo el serrín a una alta presión para formar el pellet, lo que hace que los pellets tengan una composición muy densa y dura. Consiguiendo con ello un gran poder calorífico."
 },{
   "_id": {
     "$oid": "628bd6b922b0b66661188dce"
@@ -140,7 +140,8 @@
   "stock": 537,
   "img": "briquetas.png",
   "categoria": "Leña",
-  "id": 13
+  "id": 13,
+  "descripcion": "Las briquetas de madera es un producto novedoso que sirve como combustible para chimeneas, hornos, estufas, calderas y todos aquellos dispositivos donde se hace uso de la leña. Se fabrica mediante la compactación de serrines y virutas de madera procedentes de todas las industrias que la utilizan."
 },{
   "_id": {
     "$oid": "628bd6c322b0b66661188dcf"
@@ -151,7 +152,8 @@
   "stock": 998,
   "img": "gasolina.png",
   "categoria": "Líquido",
-  "id": 14
+  "id": 14,
+  "descripcion": "Gasolina actualmente comercializada en España, carece de plomo. Además, su índice octano es 95, razón por la cual recibe dicho nombre. Este tipo contiene un máximo de un 5% de etanol."
 },{
   "_id": {
     "$oid": "628bd6d022b0b66661188dd0"
@@ -162,7 +164,8 @@
   "stock": 397,
   "img": "keroseno.png",
   "categoria": "Líquido",
-  "id": 15
+  "id": 15,
+  "descripcion": "El queroseno es un líquido inflamable, transparente, mezcla de hidrocarburos, que se obtiene de la destilación del petróleo natural. Fue utilizado en un principio en estufas y lámparas, y en la actualidad se usa como combustible de aviones de reacción y en la fabricación de insecticidas.​"
 },{
   "_id": {
     "$oid": "628bd6de22b0b66661188dd1"
@@ -173,7 +176,8 @@
   "stock": 428,
   "img": "carbon_vegetal.png",
   "categoria": "Carbón",
-  "id": 16
+  "id": 16,
+  "descripcion": "El carbón vegetal es un material combustible sólido, frágil y poroso con un alto contenido en carbono (del orden del 98 %). Se produce por calentamiento de madera y residuos vegetales, hasta temperaturas que oscilan entre 400 y 700 °C, en ausencia de aire. El poder calorífico del carbón vegetal oscila entre 29 000 y 35 000 kJ/kg, muy superior al de la madera, que oscila entre 12 000 y 21 000 kJ/kg."
 },{
   "_id": {
     "$oid": "628bd6e522b0b66661188dd2"
@@ -184,7 +188,8 @@
   "stock": 521,
   "img": "carbon.png",
   "categoria": "Carbón",
-  "id": 17
+  "id": 17,
+  "descripcion": "El carbón o carbón mineral es una roca sedimentaria organógena de color negro, muy rica en carbono y con cantidades variables de otros elementos, principalmente hidrógeno, azufre, oxígeno y nitrógeno. Principalmente es utilizada como combustible fósil. La mayoría del carbón explotado se formó a partir de los vegetales que crecieron durante los períodos Carbonífero (hace 359 a 299 millones de años) y Cretácico (hace 145 a 66 millones de años), al ser ambos períodos de gran extensión temporal y situarse gran parte de los medios sedimentarios favorables para su acumulación y conservación en latitudes intertropicales. Es un recurso no renovable."
 },{
   "_id": {
     "$oid": "628bd6f722b0b66661188dd3"
@@ -195,7 +200,8 @@
   "stock": 1482,
   "img": "uranio.png",
   "categoria": "Nuclear",
-  "id": 18
+  "id": 18,
+  "descripcion": "El uranio es un elemento químico metálico de color plateado-grisáceo de la serie de los actínidos, su símbolo químico es U y su número atómico es 92. Por ello posee 92 protones y 92 electrones, con una valencia de 6"
 },{
   "_id": {
     "$oid": "628bd70222b0b66661188dd4"
@@ -206,7 +212,8 @@
   "stock": 192,
   "img": "gasolina.png",
   "categoria": "Líquido",
-  "id": 19
+  "id": 19,
+  "descripcion": "Gasolina actualmente comercializada en España, carece de plomo. Además, su índice octano es 95, razón por la cual recibe dicho nombre. Este tipo contiene un máximo de un 10% de etanol."
 },{
   "_id": {
     "$oid": "628bd70d22b0b66661188dd5"
@@ -217,7 +224,8 @@
   "stock": 478,
   "img": "gasolina.png",
   "categoria": "Líquido",
-  "id": 20
+  "id": 20,
+  "descripcion": "También es un tipo de gasolina sin plomo y su índice octano es 98. Es decir, tiene más capacidad de aguante para evitar la detonación prematura. Este tipo contiene un máximo de un 5% de etanol."
 },{
   "_id": {
     "$oid": "628bd71922b0b66661188dd6"
@@ -228,7 +236,8 @@
   "stock": 600,
   "img": "gasolina.png",
   "categoria": "Líquido",
-  "id": 21
+  "id": 21,
+  "descripcion": "También es un tipo de gasolina sin plomo y su índice octano es 98. Es decir, tiene más capacidad de aguante para evitar la detonación prematura. Este tipo contiene un máximo de un 10% de etanol."
 },{
   "_id": {
     "$oid": "628bd72822b0b66661188dd7"
@@ -239,7 +248,9 @@
   "stock": 326,
   "img": "diesel.png",
   "Categoria": "Líquido",
-  "id": 22
+  "id": 22,
+  "categoria": "Líquido",
+  "descripcion": "El gasoil A es adecuado para vehículos-automoción. Está más refinado y contiene aditivos para evitar la solidificación de la parafina a bajas temperaturas."
 },{
   "_id": {
     "$oid": "628bd73e22b0b66661188dd8"
@@ -250,7 +261,8 @@
   "stock": 162,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 23
+  "id": 23,
+  "descripcion": "El gasoil A es adecuado para vehículos-automoción. Está más refinado y contiene aditivos para evitar la solidificación de la parafina a bajas temperaturas y con un aditivo que mejora el rendimiento."
 },{
   "_id": {
     "$oid": "628bd74c22b0b66661188dd9"
@@ -261,7 +273,8 @@
   "stock": 806,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 24
+  "id": 24,
+  "descripcion": "Es un carburante que se utiliza para usos agrícolas e industriales. En España tiene un tipo de impuestos distinto respecto al gasóleo habitual. De ahí que se conozca como Gasóleo B o Bonificado. Para comprarlo hay que aportar cierta documentación. Se usa también como combustible en calefacciones, aunque cada vez menos, ya que tiene menor poder calorífico que el Gasóleo C, hoy su uso para calefacción es antirrentable, debido a su menor poder calorífico y su menor densidad. No se puede utilizar en los vehículos no agrícolas, ya que su tipo impositivo es menor que el gasóleo A y su uso está fuertemente multado."
 },{
   "_id": {
     "$oid": "628bd75722b0b66661188dda"
@@ -272,7 +285,8 @@
   "stock": 840,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 25
+  "id": 25,
+  "descripcion": "Es un combustible que se utiliza para la calefacción doméstica, agua caliente y para uso industrial, siendo el gasóleo que más poder calorífico tiene. Hoy en día es un producto tan refinado y limpio como el gasóleo A o el B, siendo el más adecuado de los tres para producir calor. Su uso como carburante está desaconsejado, ya que su formulación no está pensada para los motores, sino para las calderas, además está prohibido dicho uso por la legislación en muchos países."
 },{
   "_id": {
     "$oid": "628bd76122b0b66661188ddb"
@@ -283,27 +297,30 @@
   "stock": 409,
   "img": "diesel.png",
   "categoria": "Líquido",
-  "id": 26
+  "id": 26,
+  "descripcion": " El BIODIESEL es por definición un biocarburante o biocombustible líquido producido a partir de los aceites vegetales y grasas animales, siendo la soja, la colza, y el girasol, las materias primas más utilizadas mundialmente para este fin. Las propiedades del biodiesel son muy similares a las del GAS OIL de origen fósil, en cuanto a densidad, número de cetanos, eficiencia y rendimiento de los motores gasoleros (diesel), destacándose que el biodiesel presenta un punto de inflamación superior. "
 },{
   "_id": {
     "$oid": "628bd76a22b0b66661188ddc"
   },
-  "nombre": "GPL",
+  "nombre": "GLP",
   "precio": 0.5,
   "preciou": "0'50€/L",
   "stock": 632,
   "img": "diesel.png",
-  "categoria": "Líquido",
-  "id": 27
+  "categoria": "Gas licuado",
+  "id": 27,
+  "descripcion": "El gas licuado del petróleo es la mezcla de gases licuados presentes en el gas natural o disueltos en el petróleo. Lleva consigo procesos físicos y químicos, por ejemplo el uso de metano. Los componentes del GLP, aunque a temperatura y presión ambientales son gases, son fáciles de licuar, de ahí su nombre."
 },{
   "_id": {
-    "$oid": "628bd77322b0b66661188ddd"
+    "$oid": "628bfb67a336661ab829f05a"
   },
+  "id": 28,
   "nombre": "GNC",
+  "categoria": "Gas licuado",
   "precio": 1.7,
   "preciou": "1'70€/L",
   "stock": 716,
   "img": "diesel.png",
-  "categoria": "Líquido",
-  "id": 28
+  "descripcion": "El gas natural comprimido, más conocido por la sigla GNC, es un combustible para uso vehicular que, por ser económico y ambientalmente más limpio, ​ es considerado una alternativa sustentable para la sustitución de combustibles líquidos."
 }]

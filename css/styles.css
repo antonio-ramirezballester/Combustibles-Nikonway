@@ -327,6 +327,10 @@ td, th {
     width: auto;
 }
 
+.detalles p{
+    font-size: 20px;
+}
+
 .detalles button{
     margin-top: 10px;
     background-color: var(--negro);
