@@ -79,7 +79,6 @@ function modificaCombustible(id) {
         body: JSON.stringify(combustibleData)
     })
         .then(response => {
-            alert("Combustible modificado");
             response.json();
             getLista();
         })
@@ -112,7 +111,6 @@ function eliminarCombustible(id) {
     fetch("http://localhost:5000/combustibles/" + id, { method: 'DELETE' })
         .then(response => {
             getLista();
-            alert("Combustible eliminado con éxito");
         })
         .then(response => console.log(response))
         .catch(error => error);
