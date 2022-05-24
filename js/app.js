@@ -4,6 +4,8 @@ const searchTextTag = document.querySelector('#buscador');
 const submitButtonTag = document.querySelector('#submit-buscador');
 const ordenarTag = document.querySelector('#ordenar');
 const carritoCombustiblesTag = document.querySelector('#carritoCombustibles');
+const detallesTag = document.querySelector('.detalles');
+const cerrarDetallesTag = document.querySelector('#cerrarDetalles');
 let combustiblesJSON = [];
 let combustiblesFavoritos = [];
 let carrito = [];
@@ -15,16 +17,23 @@ window.onload = async () => {
     marcarFavoritos();
     cargarFavoritos();
     seleccionarCombustible();
+    detallesCombustibles();
 
-    ordenarTag.addEventListener("change", function(){
+    ordenarTag.addEventListener("change", function(evento){
+        evento.preventDefault();
         ordenarCombustibles();
         cargarFavoritos();
         marcarFavoritos();
     });
 
-    submitButtonTag.addEventListener("click", function (event) {
-        event.preventDefault();
+    submitButtonTag.addEventListener("click", function(evento){
+        evento.preventDefault();
         filtrarCombustible();
+    });
+
+    cerrarDetallesTag.addEventListener("click", function(evento){
+        evento.preventDefault();
+        detallesTag.style.display="none";
     });
 };
 
@@ -41,11 +50,33 @@ const pintarCombustibles = (combustibles) => {
                 <p>Categoría: ${combustible.categoria}</p>
                 <p>Precio: ${combustible.preciou}</p>
                 <p>Stock: ${combustible.stock}</p>
-                <p><a href="#" class="btnCombustibles agregar-carrito" data-id="${combustible._id}">Añadir al carrito &raquo;</a></p>
+                <p><a href="#" class="btnCombustibles btnDetalles" data-id="${combustible._id}">Ver detalles &raquo;</a></p>
+                <p><a href="#" class="btnCombustibles agregarCarrito" data-id="${combustible._id}">Añadir al carrito &raquo;</a></p>
             </div>`;
         combustiblesTag.innerHTML += template;  
     });
 };
+
+function detallesCombustibles(){
+    const listButtons = document.querySelectorAll(".btnDetalles");
+    listButtons.forEach(boton =>{
+        boton.addEventListener("click", function(evento){
+            evento.preventDefault();
+            detallesTag.style.display="block";
+            const idCombustible = this.dataset.id;
+            const combustible = combustiblesJSON.find(combustible => combustible._id == idCombustible);
+
+            const nombreCombustible = document.querySelector(".detalles h2");
+            nombreCombustible.textContent=combustible.nombre;
+
+            const imgCombustible = document.querySelector(".detalles img");
+            imgCombustible.src=`./img/${combustible.img}`;
+
+            const descripcionCombustible = document.querySelector(".detalles p");
+            descripcionCombustible.textContent=combustible.descripcion;
+        });
+    });
+}
 
 function filtrarCombustible() {
     const text = searchTextTag.value;
@@ -93,7 +124,8 @@ const ordenarCombustibles = () => {
 const marcarFavoritos = ()=>{
     const listaFavoritos = document.querySelectorAll(".fa-heart");
     listaFavoritos.forEach(fav => {
-        fav.addEventListener("click", function(){
+        fav.addEventListener("click", function(evento){
+            evento.preventDefault();
             this.classList.toggle("on");
             guardarFavoritos(this);
         });
@@ -126,9 +158,10 @@ const cargarFavoritos =()=>{
 };
 
 function seleccionarCombustible() {
-    const listButtons = document.querySelectorAll(".agregar-carrito");
+    const listButtons = document.querySelectorAll(".agregarCarrito");
     listButtons.forEach(button => {
-        button.addEventListener("click", function () {
+        button.addEventListener("click", function(evento){
+            evento.preventDefault();
             const idCombustible = this.dataset.id;
             const combustibleAr = combustiblesJSON.find(combustible => combustible._id == idCombustible);
             let nuevoCombustible = {

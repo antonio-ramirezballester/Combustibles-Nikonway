@@ -72,7 +72,6 @@ td, th {
     text-align: center;
 }
 
-
 #num-combustibles{
     background-color: brown;
     font-weight: bold;
@@ -302,6 +301,35 @@ td, th {
     padding: 7px;
     transition: linear 0.25s;
     background-color: var(--naranja);
+}
+
+.detalles{
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+    border: 1px solid var(--naranja);
+    padding: 1rem;
+    background-color: var(--negro);
+    color: var(--naranja);
+    width: 50%;
+    display: none;
+}
+
+.detalles .divDetalles{
+    display: flex;
+}
+
+.detalles img{
+    height: 20rem;
+    width: auto;
+}
+
+.detalles button{
+    margin-top: 10px;
+    background-color: var(--negro);
 }
 
 footer{

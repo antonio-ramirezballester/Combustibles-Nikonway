@@ -8,6 +8,9 @@ const combustiblesSchema = new Schema({
     nombre:{
         type: String
     },
+    descripcion:{
+        type: String
+    },
     categoria:{
         type: String
     },
