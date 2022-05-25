@@ -28,13 +28,15 @@ Nos servirá para crear los modelos relacinados con las colecciones de MongoDB
 ### Instalación de cors para que se pueda consumir la API de otras URL's
     npm install --save cors
 
-### Paquete para recoger los daatos de los formularios
+### Paquete para recoger los datos de los formularios
     npm install body-parser
     
 ## Instalar MongoDB Compass
- - Entrar y crear la BD de datos "combustibles"
- - Crear la colección con el mismo nombre "combustibles"
- - crear algunos documentos json de ejemplo 
+1. Entrar y crear la base de datos llamada "combustibles"
+
+2. Crear colección llamada "combustibles"
+
+3. Importar cualquiera de los 2 archivos guardados en la carpeta mongodb (recomendado el json ya que importa también el tipo de cada dato)
 
 ## Código de la aplicación
 
@@ -60,22 +62,6 @@ Nos servirá para crear los modelos relacinados con las colecciones de MongoDB
 ### Mostrar todos los combustibles
 Acceder al navegador con la url 
 http://localhost:5000/combustibles
-
-### Mostrar un curso específico
-Acceder através de la id de un curso (el id depende de cada base de datos)
-http://localhost:5000/combustibles/60814fe3b4030ff9ac3af514
-
-Utilizando Postman
-![Combustibles get](./screenshots/combustibles_get.png)
-
-### Insertar un nuevo curso utilizando Postman
-![Combustibles post](./screenshots/combustibles_post.png)
-
-### Modificar los datos de un curso existente utilizando Postman
-![Combustibles put](./screenshots/combustibles_put.png)
-
-### Borrando un curso existente utilizando Postman
-![Combustibles delete](./screenshots/combustibles_delete.png)
 
 # Recursos
 https://expressjs.com/es/api.html
