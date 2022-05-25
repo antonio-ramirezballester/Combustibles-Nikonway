@@ -8,10 +8,10 @@ module.exports = function() {
     // Muestra todos los combustibles
     router.get('/combustibles',combustiblesController.mostrarCombustibles);
 
-    // muestra un Combustible en especifico por su ID
+    // Muestra un Combustible en especifico por su ID
     router.get('/combustibles/:idCombustible',  combustiblesController.mostrarCombustible);
 
-    // nuevo Combustible
+    // Nuevo Combustible
     router.post('/combustibles', combustiblesController.nuevoCombustible);    
 
     // Actualizar Combustibles
