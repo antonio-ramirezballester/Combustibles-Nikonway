@@ -1,8 +1,8 @@
-# API CURSOS CON NODE.js Y EXPRESS
+# API COMBUSTIBLES CON NODE.js Y EXPRESS
 
 ## Pasos inciales
-- Crear directorio del proyecto "cursos"
-- Inicializar proyecto dentro de "cursos" ejecutando:
+- Crear directorio del proyecto "combustibles"
+- Inicializar proyecto dentro de "combustibles" ejecutando:
     npm init
 
 - Nota: Si es un proyecto ya configurado ejecutar:
@@ -32,8 +32,8 @@ Nos servirá para crear los modelos relacinados con las colecciones de MongoDB
     npm install body-parser
     
 ## Instalar MongoDB Compass
- - Entrar y crear la BD de datos "cursos"
- - Crear la colección con el mismo nombre "cursos"
+ - Entrar y crear la BD de datos "combustibles"
+ - Crear la colección con el mismo nombre "combustibles"
  - crear algunos documentos json de ejemplo 
 
 ## Código de la aplicación
@@ -42,11 +42,11 @@ Nos servirá para crear los modelos relacinados con las colecciones de MongoDB
 
 2. Crear modelos
 - Crear carpeta models
-- Crear archivo Cursos.js
+- Crear archivo Combustibles.js
 
 3. Crear controllers (operaciones CRUD)
 - Crear carpeta controllers
-- Crear archivo cursosController.js
+- Crear archivo combustiblesController.js
 
 4. Crear rutas
 - Crear carpeta routes
@@ -57,25 +57,25 @@ Nos servirá para crear los modelos relacinados con las colecciones de MongoDB
 
 ## PROBAR LA API (endpoints)
 
-### Mostrar todos los cursos
+### Mostrar todos los combustibles
 Acceder al navegador con la url 
-http://localhost:5000/cursos
+http://localhost:5000/combustibles
 
 ### Mostrar un curso específico
 Acceder através de la id de un curso (el id depende de cada base de datos)
-http://localhost:5000/cursos/60814fe3b4030ff9ac3af514
+http://localhost:5000/combustibles/60814fe3b4030ff9ac3af514
 
 Utilizando Postman
-![Cursos get](./screenshots/cursos_get.png)
+![Combustibles get](./screenshots/combustibles_get.png)
 
 ### Insertar un nuevo curso utilizando Postman
-![Cursos post](./screenshots/cursos_post.png)
+![Combustibles post](./screenshots/combustibles_post.png)
 
 ### Modificar los datos de un curso existente utilizando Postman
-![Cursos put](./screenshots/cursos_put.png)
+![Combustibles put](./screenshots/combustibles_put.png)
 
 ### Borrando un curso existente utilizando Postman
-![Cursos delete](./screenshots/cursos_delete.png)
+![Combustibles delete](./screenshots/combustibles_delete.png)
 
 # Recursos
 https://expressjs.com/es/api.html

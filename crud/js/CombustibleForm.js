@@ -69,7 +69,6 @@ function modificaCombustible(id) {
         "stock": document.querySelector("#stock").value,
         "img": document.querySelector("#img").value,
     };
-    console.log("Datos a modificar", combustibleData);
 
     fetch(`${dominioAPI}/${id}`, {
         method: 'PUT',
@@ -123,7 +122,6 @@ function guardarCombustible() {
         insertarCombustible();
     else
         modificaCombustible(id);
-
     myModal.hide();
 }
 
